@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-6 bg-pink-50">
+    <header>
+        <h1 class="text-6xl text-center font-semibold text-cyan-800 pb-3 bg-blue-300">Money Master</h1>
+    </header>
+    <main>
+        <section class="md:grid grid-cols-2 gap-6 h-full mb-12">
+            <div class="py-4">
+                <img class="w-full h-full" src="images/calculation.jpg" alt="calculation">
+            </div>
+            <div class="text-center bg-violet-50 py-4">
+                <div class="mb-4">
+                    <h3 class="text-4xl text-bold bg-violet-400 py-2">Income</h3>
+                    <label class=" block text-2xl text-medium" for="income">Income <sup
+                            class="text-2xl text-bold text-red-600">*</sup> :
+                        <input class="bg-gray-200 py-1 my-4 rounded text-medium" type="number" name="income"
+                            id="income">
+                    </label>
+                </div>
+                <div class="mb-4">
+                    <h3 class="text-4xl text-bold bg-fuchsia-400 py-2">Expenses</h3>
+                    <label class=" block text-2xl text-medium" for="food">Food <sup
+                            class="text-2xl text-bold text-red-600">*</sup> :
+                        <input class="bg-gray-200 py-1 my-4 rounded text-medium input-field" type="number" name="food"
+                            id="">
+                    </label>
+                    <label class=" block text-2xl text-medium" for="rent">Rent <sup
+                            class="text-2xl text-bold text-red-600">*</sup> :
+                        <input class="bg-gray-200 py-1 my-4 rounded text-medium input-field" type="number" name="rent"
+                            id="">
+                    </label>
+                    <label class=" block text-2xl text-medium" for="clothes">Clothes <sup
+                            class="text-2xl text-bold text-red-600">*</sup> :
+                        <input class="bg-gray-200 py-1 my-4 rounded text-medium input-field" type="number"
+                            name="clothes" id="">
+                    </label>
+                </div>
+                <div class="mb-8">
+                    <button id="calculate"
+                        class="bg-sky-500 text-white text-3xl text-semibold rounded hover:bg-sky-600 px-6 py-2"
+                        type="submit">Calculate</button>
+                </div>
+                <div>
+                    <h3 class="text-4xl text-bold my-4">Total Expenses: $<span id="total-expenses"
+                            class="bg-yellow-200">00</span></h3>
+                    <h3 class="text-4xl text-bold my-4">Balance: $<span id="balance" class="bg-yellow-200">00</span>
+                    </h3>
+
+                </div>
+                <div>
+                    <label class=" block text-2xl text-medium" for="save">Save:
+                        <input class="w-28 bg-gray-200 py-1 my-4 rounded text-medium" type="number" name="save"
+                            id="saving-rate">
+                        <span>%</span>
+                        <button class="bg-sky-500 text-white text-3xl text-semibold rounded hover:bg-sky-600 px-6 py-2"
+                            type="submit" id="save-btn">Save
+                        </button>
+                    </label>
+                </div>
+                <div>
+                    <h3 class="text-4xl text-bold my-4">Saving Amount: $<span id="saving-amount"
+                            class="bg-yellow-200">00</span></h3>
+                    <h3 class="text-4xl text-bold my-4">Remaining Balance: $<span id="remaining-balance"
+                            class="bg-yellow-200">00</span></h3>
+                </div>
+
+
+
+            </div>
+
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
